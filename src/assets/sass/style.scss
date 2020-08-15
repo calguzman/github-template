@@ -1,0 +1,34 @@
+// Vars
+
+$orange-color: #f7826c;
+$lightGray-color:#e1e4e8;
+$darkGray-color:#666666;
+
+*{  
+  margin: 0;
+}
+html{
+  font-size:16px;
+}
+
+.header{
+ font-family: Helvetica,Arial,sans-serif;
+ border-bottom: 1px solid #e1e4e8;
+}
+.navigation{
+  margin-top:2rem;
+  width: 70%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  &__item{
+    padding-bottom: 1.2rem;
+  }
+  &__item:hover{
+    border-bottom: 2px solid $darkGray-color;
+  }
+  &__item--active{
+    border-bottom: 2px solid $orange-color;
+  }
+}

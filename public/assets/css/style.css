@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.header {
+  font-family: Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.navigation {
+  margin-top: 2rem;
+  width: 70%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navigation__item {
+  padding-bottom: 1.2rem;
+}
+.navigation__item:hover {
+  border-bottom: 2px solid #666666;
+}
+.navigation__item--active {
+  border-bottom: 2px solid #f7826c;
+}
