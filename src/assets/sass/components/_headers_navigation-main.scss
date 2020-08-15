@@ -1,0 +1,40 @@
+.main-nav-container{
+  width: 100%;
+  margin:0;
+  padding: 0;
+  border: 1px solid $lightGray-color;
+}
+.main-nav{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30%;
+  margin-top:1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  align-items: center;
+  list-style: none;
+  &__item{
+    margin-left:20px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:1rem;
+    padding-right:1rem;
+    a{
+      text-decoration:none;
+      margin-left:.8rem;
+      color:$darkGray-color;
+    }
+    i{
+      display: inline;
+    }
+    &:hover{
+      border-bottom:3px solid $lightGray-color;
+    }
+    &--active{
+      @extend .main-nav__item;
+      border-bottom:3px solid $orange-color;
+    }
+  }
+}
